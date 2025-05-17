@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\GameTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\GameTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\CharacterMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\CharacterMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,6 +27,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameTimer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\GameTimer.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\GameTimer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\GameTimer.cs",
+              "RelativeToolTip": "Assets\\scripts\\GameTimer.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T23:03:29.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CharacterMovement.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\CharacterMovement.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\CharacterMovement.cs",
