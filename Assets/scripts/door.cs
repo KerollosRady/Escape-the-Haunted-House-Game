@@ -101,6 +101,10 @@ public class Door : MonoBehaviour
     private PlayerInputActions inputActions;
     private bool interactPressed = false;
 
+    public bool isMainDoor = false, missionFinished = false;
+    public AudioSource missionCompletedSound;
+    public GameObject missionCompletedImage;
+
     private void Awake()
     {
         inputActions = new PlayerInputActions();
@@ -128,7 +132,6 @@ public class Door : MonoBehaviour
 
     private void OnDoorInteract(InputAction.CallbackContext context)
     {
-        Debug.Log("pressed");
         interactPressed = true;
     }
 
@@ -137,15 +140,17 @@ public class Door : MonoBehaviour
         if (opened) return;
         if (other.CompareTag("MainCamera"))
         {
-            if (locked && door_key.activeSelf) {
+            if (locked && door_key.activeSelf)
+            {
                 lockedText.SetActive(true);
                 if (interactPressed && errorSound != null) errorSound.Play();
             }
-            else {
+            else
+            {
                 intText.SetActive(true);
                 if (interactPressed)
                 {
-                    if(_currentCorotine != null) StopCoroutine(_currentCorotine);
+                    if (_currentCorotine != null) StopCoroutine(_currentCorotine);
                     _currentCorotine = StartCoroutine(ToggleDoor());
                     interactPressed = false;
                 }
@@ -170,6 +175,15 @@ public class Door : MonoBehaviour
         {
             targetRotation = _openRotation;
             if (open != null) open.Play();
+            Debug.Log($"Open door isMainDoor: {isMainDoor} missionFinised: {missionFinished}");
+
+            if (isMainDoor && !missionFinished)
+            {
+                Debug.Log("Mission Completed");
+                missionFinished = true;
+                missionCompletedSound.Play();
+                missionCompletedImage.SetActive(true);
+            }
         }
         else
         {
@@ -179,11 +193,16 @@ public class Door : MonoBehaviour
         opened = !opened;
         intText.SetActive(false);
         // door_closed.transform.Find("door (closed)").GetComponent<Collider>().enabled = false;
-        while (Quaternion.Angle(transform.rotation, targetRotation) > 0.01f) {
+        while (Quaternion.Angle(transform.rotation, targetRotation) > 0.01f)
+        {
             transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, Time.deltaTime * openSpeed);
             yield return null;
         }
         // door_closed.transform.Find("door (closed)").GetComponent<Collider>().enabled = true;
         transform.rotation = targetRotation;
+    }
+    void Update()
+    {
+        if (isMainDoor && !missionCompletedSound.isPlaying) missionCompletedImage.SetActive(false);
     }
 }
