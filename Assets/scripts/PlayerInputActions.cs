@@ -663,6 +663,15 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""FullScreen"",
+                    ""type"": ""Button"",
+                    ""id"": ""f0656c5d-4ef8-460e-9f8c-e31c55d22c2e"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -1083,6 +1092,17 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                     ""action"": ""Esc"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9a893af2-f079-4d81-9852-76756486aaa5"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""FullScreen"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -1174,6 +1194,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         m_UI_Esc = m_UI.FindAction("Esc", throwIfNotFound: true);
+        m_UI_FullScreen = m_UI.FindAction("FullScreen", throwIfNotFound: true);
     }
 
     ~@PlayerInputActions()
@@ -1460,6 +1481,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_TrackedDevicePosition;
     private readonly InputAction m_UI_TrackedDeviceOrientation;
     private readonly InputAction m_UI_Esc;
+    private readonly InputAction m_UI_FullScreen;
     /// <summary>
     /// Provides access to input actions defined in input action map "UI".
     /// </summary>
@@ -1511,6 +1533,10 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "UI/Esc".
         /// </summary>
         public InputAction @Esc => m_Wrapper.m_UI_Esc;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/FullScreen".
+        /// </summary>
+        public InputAction @FullScreen => m_Wrapper.m_UI_FullScreen;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1567,6 +1593,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Esc.started += instance.OnEsc;
             @Esc.performed += instance.OnEsc;
             @Esc.canceled += instance.OnEsc;
+            @FullScreen.started += instance.OnFullScreen;
+            @FullScreen.performed += instance.OnFullScreen;
+            @FullScreen.canceled += instance.OnFullScreen;
         }
 
         /// <summary>
@@ -1608,6 +1637,9 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
             @Esc.started -= instance.OnEsc;
             @Esc.performed -= instance.OnEsc;
             @Esc.canceled -= instance.OnEsc;
+            @FullScreen.started -= instance.OnFullScreen;
+            @FullScreen.performed -= instance.OnFullScreen;
+            @FullScreen.canceled -= instance.OnFullScreen;
         }
 
         /// <summary>
@@ -1861,5 +1893,12 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnEsc(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "FullScreen" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnFullScreen(InputAction.CallbackContext context);
     }
 }

@@ -1,7 +1,9 @@
 .vscode/
+.vs/
 Library/
 Logs/
 Temp/
 Assembly-CSharp.csproj
 Assembly-CSharp-Editor.csproj
 Escape-the-Haunted-House-Game.sln
+.vsconfig

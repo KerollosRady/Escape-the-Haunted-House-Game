@@ -3,9 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class ChaseCharacter : MonoBehaviour
 {
+    public GameObject MissionCompleted;
+    bool MissionCompletedTriggered = false;
+
     public Transform player; // reference to the player's transform
     public Animator animator; // reference to the enemy's Animator component
-
+    public GameObject GameOverWindow;
     public float moveSpeed = 5f; // the enemy's move speed
     public float rotationSpeed = 5f; // the speed at which the enemy rotates
     public float chaseRange = 10f; // the distance at which the enemy starts chasing the player
@@ -13,6 +16,8 @@ public class ChaseCharacter : MonoBehaviour
 
     private void Update()
     {
+        if (MissionCompleted.activeSelf)
+            MissionCompletedTriggered = true;
         // flatten Y to avoid height affecting distance
         Vector3 flatPlayerPos = new Vector3(player.position.x, 0f, player.position.z);
         Vector3 flatEnemyPos = new Vector3(transform.position.x, 0f, transform.position.z);
@@ -24,12 +29,14 @@ public class ChaseCharacter : MonoBehaviour
 
     private void PlayerDeath(float distance)
     {
+        if (MissionCompletedTriggered)
+            return;
         // if the distance is close enough to the player it reloads the scene
-        if (distance < deathRange)
-        {
-            // loads the active scene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
+            if (distance < deathRange)
+            {
+                GameOverWindow.SetActive(true);
+                return;
+            }
     }
 
     private void ChasePlayer(float distance)

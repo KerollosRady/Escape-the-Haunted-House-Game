@@ -4,10 +4,19 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 [RequireComponent(typeof(CharacterController))]
 public class Player : MonoBehaviour
 {
+    public GameObject MissionCompleted;
+    bool MissionCompletedTriggered = false;
+    public TextMeshProUGUI timerText;         // Assign this from Inspector
+    public float startTime = 600f; // 10 minutes = 600 seconds
+    private float currentTime;
+    private bool isGameOverSoundPlayed = false;
+
+
     public float walkingSpeed = 7.5f;
     public float runningSpeed = 11.5f;
     public float jumpSpeed = 8.0f;
@@ -28,11 +37,17 @@ public class Player : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
     public GameObject exitWindow;
+    public GameObject GameOver;
+
     Button exitYesButton, exitNoButton;
     bool exitOn = false;
     public AudioSource popSound;
+    AudioSource gameOverSound;
     private void Awake()
     {
+        currentTime = startTime;
+        gameOverSound = GameOver.transform.Find("GameOverSound").GetComponent<AudioSource>();
+
         inputActions = new PlayerInputActions();
 
         inputActions.Player.Move.performed += ctx => movementInput = ctx.ReadValue<Vector2>();
@@ -73,6 +88,8 @@ public class Player : MonoBehaviour
         exitWindow.SetActive(false);
     }
     private void escape(InputAction.CallbackContext context){
+        if (isGameOverSoundPlayed)
+            return;
         exitOn = !exitOn;
         if (exitOn) {
             if (popSound != null) popSound.Play();
@@ -99,6 +116,36 @@ public class Player : MonoBehaviour
     }
     void Update()
     {
+        if (MissionCompleted.activeSelf)
+            MissionCompletedTriggered = true;
+        if (GameOver.activeSelf)
+        {
+            if (!isGameOverSoundPlayed)
+            {
+                gameOverSound.Play();
+                isGameOverSoundPlayed = true;
+                return;
+            }
+            if (gameOverSound.isPlaying)
+                return;
+            SceneManager.LoadScene("MainMenu");
+            return;
+        }
+
+        if(!MissionCompletedTriggered)
+            currentTime -= Time.deltaTime;
+
+        if (currentTime <= 0)
+        {
+            GameOver.SetActive(true);
+            return;
+        }
+        else
+        {
+            int minutes = Mathf.FloorToInt(currentTime / 60);
+            int seconds = Mathf.FloorToInt(currentTime % 60);
+            timerText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
         // Debug.Log($"Move: {movementInput}, Look: {lookInput}, Jump: {isJumping}, Run: {isRunning}");
         // Calculate direction
         Vector3 forward = transform.forward;
