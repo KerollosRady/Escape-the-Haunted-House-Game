@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\Player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\CharacterMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\CharacterMovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Light.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\Light.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\PlayerInputActions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\PlayerInputActions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\MainMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\GameTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\GameTimer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\scripts\\Pickup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,13 +50,104 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PlayerInputActions.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\PlayerInputActions.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerInputActions.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\PlayerInputActions.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerInputActions.cs",
+              "ViewState": "AgIAAFQGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T08:11:21.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\MainMenu.cs",
+              "RelativeToolTip": "Assets\\scripts\\MainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T08:10:52.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Pickup.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Pickup.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Pickup.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Pickup.cs",
+              "RelativeToolTip": "Assets\\scripts\\Pickup.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T08:08:44.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\scripts\\Player.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T08:04:12.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Light.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Light.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Light.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\Light.cs",
+              "RelativeToolTip": "Assets\\scripts\\Light.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T07:56:43.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "door.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\door.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\door.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\door.cs",
+              "RelativeToolTip": "Assets\\scripts\\door.cs",
+              "ViewState": "AgIAALQAAAAAAAAAAAAAAGAAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-18T07:54:18.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameTimer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\GameTimer.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\GameTimer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\GameTimer.cs",
+              "RelativeToolTip": "Assets\\scripts\\GameTimer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T23:03:29.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CharacterMovement.cs",
               "DocumentMoniker": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\CharacterMovement.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\CharacterMovement.cs",
               "ToolTip": "C:\\Users\\lenovo\\OneDrive\\Documents\\GitHub\\Escape-the-Haunted-House-Game\\Assets\\scripts\\CharacterMovement.cs",
               "RelativeToolTip": "Assets\\scripts\\CharacterMovement.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T21:18:49.943Z",
               "EditorCaption": ""
