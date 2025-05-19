@@ -33,6 +33,8 @@ Escape the Haunted House Game is a first-person horror adventure where the playe
 ## 🖼️ Screenshots
 ![Screenshot 2025-05-18 193522](https://github.com/user-attachments/assets/706e800e-e107-441a-a0a2-a09ea0a34c45)
 ![Screenshot 2025-05-18 193540](https://github.com/user-attachments/assets/81b08579-0688-4efa-a60b-10caa0b3259d)
+![Screenshot 2025-05-18 194455](https://github.com/user-attachments/assets/5f132373-6688-4636-91b8-2a1f82489d98)
+![Screenshot 2025-05-18 193746](https://github.com/user-attachments/assets/a9fa6973-60e7-47d5-b72b-dc64b7fe6091)
 ![Screenshot 2025-05-18 193616](https://github.com/user-attachments/assets/c8ee1a0e-3091-4a5c-9c90-cd75c418a112)
 ![Screenshot 2025-05-18 193959](https://github.com/user-attachments/assets/da5759f6-d787-40ac-b85f-05c1e220caaf)
 ![Screenshot 2025-05-18 194023](https://github.com/user-attachments/assets/c3ac0a17-ff28-4522-b56c-48f38eb870c1)
@@ -42,7 +44,6 @@ Escape the Haunted House Game is a first-person horror adventure where the playe
 ![Screenshot 2025-05-18 194547](https://github.com/user-attachments/assets/271152cb-50dc-462c-a418-533951109477)
 ![Screenshot 2025-05-18 194204](https://github.com/user-attachments/assets/a61828d1-54c8-4f22-af14-a5a03d792434)
 ![Screenshot 2025-05-18 194253](https://github.com/user-attachments/assets/293be3a1-33d5-4bdb-8198-506f808e3fde)
-![Screenshot 2025-05-18 201015](https://github.com/user-attachments/assets/c8022770-c695-4cd7-9ffa-98959dab4653)
 ![Screenshot 2025-05-18 201135](https://github.com/user-attachments/assets/5084b58e-88c6-4e49-a0c0-e6c9c0c174d5)
 ![Screenshot 2025-05-18 194430](https://github.com/user-attachments/assets/e60482b0-450a-4f48-a535-f9f8d87c18eb)
 ![Screenshot 2025-05-18 201015](https://github.com/user-attachments/assets/929ae0c7-c008-4319-a234-e241331e84a9)
